@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain-chroma
+langchain-google-genai
+google-generativeai
+chromadb
+pdfplumber
+langdetect
+python-dotenv

@@ -1,0 +1,371 @@
+{
+  "IPC_302": {
+    "ipc_section": "302",
+    "ipc_title": "Murder",
+    "ipc_description": "Punishes the offense of murder with severe penalties.",
+    "bns_section": "103",
+    "bns_title": "Murder",
+    "bns_description": "Punishes the offense of murder under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_304": {
+    "ipc_section": "304",
+    "ipc_title": "Culpable homicide not amounting to murder",
+    "ipc_description": "Covers culpable homicide that does not meet the threshold for murder.",
+    "bns_section": "105",
+    "bns_title": "Culpable homicide",
+    "bns_description": "Defines culpable homicide and related penalties.",
+    "status": "replaced"
+  },
+  "IPC_307": {
+    "ipc_section": "307",
+    "ipc_title": "Attempt to murder",
+    "ipc_description": "Punishes attempts to commit murder.",
+    "bns_section": "109",
+    "bns_title": "Attempt to murder",
+    "bns_description": "Punishes attempts to commit murder under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_376": {
+    "ipc_section": "376",
+    "ipc_title": "Rape",
+    "ipc_description": "Defines and punishes the offense of rape.",
+    "bns_section": "63",
+    "bns_title": "Rape",
+    "bns_description": "Defines and punishes the offense of rape under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_420": {
+    "ipc_section": "420",
+    "ipc_title": "Cheating and dishonestly inducing delivery of property",
+    "ipc_description": "Covers cheating involving dishonest inducement of property delivery.",
+    "bns_section": "316",
+    "bns_title": "Cheating",
+    "bns_description": "Defines and punishes cheating under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_498A": {
+    "ipc_section": "498A",
+    "ipc_title": "Cruelty by husband or relatives",
+    "ipc_description": "Punishes cruelty against a married woman by husband or relatives.",
+    "bns_section": "85",
+    "bns_title": "Cruelty by husband or relatives",
+    "bns_description": "Punishes cruelty against a married woman under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_354": {
+    "ipc_section": "354",
+    "ipc_title": "Assault or criminal force to woman with intent to outrage modesty",
+    "ipc_description": "Punishes assault or force against a woman with intent to outrage modesty.",
+    "bns_section": "74",
+    "bns_title": "Assault on woman",
+    "bns_description": "Punishes assault on a woman under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_406": {
+    "ipc_section": "406",
+    "ipc_title": "Criminal breach of trust",
+    "ipc_description": "Punishes criminal breach of trust.",
+    "bns_section": "316",
+    "bns_title": "Cheating",
+    "bns_description": "Includes criminal breach of trust and related cheating offenses.",
+    "status": "replaced"
+  },
+  "IPC_120B": {
+    "ipc_section": "120B",
+    "ipc_title": "Criminal conspiracy",
+    "ipc_description": "Punishes criminal conspiracy.",
+    "bns_section": "61",
+    "bns_title": "Criminal conspiracy",
+    "bns_description": "Punishes criminal conspiracy under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_34": {
+    "ipc_section": "34",
+    "ipc_title": "Common intention",
+    "ipc_description": "Liability for acts done by several persons in furtherance of common intention.",
+    "bns_section": "3(5)",
+    "bns_title": "Common intention",
+    "bns_description": "Liability for acts done by several persons in furtherance of common intention.",
+    "status": "replaced"
+  },
+  "IPC_147": {
+    "ipc_section": "147",
+    "ipc_title": "Rioting",
+    "ipc_description": "Punishes rioting.",
+    "bns_section": "191",
+    "bns_title": "Rioting",
+    "bns_description": "Punishes rioting under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_148": {
+    "ipc_section": "148",
+    "ipc_title": "Rioting, armed with deadly weapon",
+    "ipc_description": "Punishes rioting while armed with a deadly weapon.",
+    "bns_section": "192",
+    "bns_title": "Rioting with deadly weapon",
+    "bns_description": "Punishes rioting with deadly weapon under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_149": {
+    "ipc_section": "149",
+    "ipc_title": "Unlawful assembly",
+    "ipc_description": "Liability for offenses committed by members of an unlawful assembly.",
+    "bns_section": "190",
+    "bns_title": "Unlawful assembly",
+    "bns_description": "Liability for offenses committed by members of an unlawful assembly.",
+    "status": "replaced"
+  },
+  "IPC_186": {
+    "ipc_section": "186",
+    "ipc_title": "Obstructing public servant",
+    "ipc_description": "Punishes obstruction of a public servant in discharge of duties.",
+    "bns_section": "221",
+    "bns_title": "Obstructing public servant",
+    "bns_description": "Punishes obstruction of a public servant under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_294": {
+    "ipc_section": "294",
+    "ipc_title": "Obscene acts",
+    "ipc_description": "Punishes obscene acts and songs in public places.",
+    "bns_section": "296",
+    "bns_title": "Obscene acts",
+    "bns_description": "Punishes obscene acts and songs in public places under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_323": {
+    "ipc_section": "323",
+    "ipc_title": "Voluntarily causing hurt",
+    "ipc_description": "Punishes voluntarily causing hurt.",
+    "bns_section": "115",
+    "bns_title": "Voluntarily causing hurt",
+    "bns_description": "Punishes voluntarily causing hurt under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_324": {
+    "ipc_section": "324",
+    "ipc_title": "Hurt by dangerous weapons",
+    "ipc_description": "Punishes voluntarily causing hurt by dangerous weapons.",
+    "bns_section": "117",
+    "bns_title": "Hurt by dangerous weapons",
+    "bns_description": "Punishes hurt by dangerous weapons under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_325": {
+    "ipc_section": "325",
+    "ipc_title": "Grievous hurt",
+    "ipc_description": "Punishes voluntarily causing grievous hurt.",
+    "bns_section": "116",
+    "bns_title": "Grievous hurt",
+    "bns_description": "Punishes grievous hurt under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_379": {
+    "ipc_section": "379",
+    "ipc_title": "Theft",
+    "ipc_description": "Punishes theft.",
+    "bns_section": "303",
+    "bns_title": "Theft",
+    "bns_description": "Punishes theft under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_380": {
+    "ipc_section": "380",
+    "ipc_title": "Theft in dwelling house",
+    "ipc_description": "Punishes theft committed in a dwelling house.",
+    "bns_section": "305",
+    "bns_title": "Theft in dwelling",
+    "bns_description": "Punishes theft in a dwelling house under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_392": {
+    "ipc_section": "392",
+    "ipc_title": "Robbery",
+    "ipc_description": "Punishes robbery.",
+    "bns_section": "309",
+    "bns_title": "Robbery",
+    "bns_description": "Punishes robbery under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_395": {
+    "ipc_section": "395",
+    "ipc_title": "Dacoity",
+    "ipc_description": "Punishes dacoity.",
+    "bns_section": "310",
+    "bns_title": "Dacoity",
+    "bns_description": "Punishes dacoity under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_397": {
+    "ipc_section": "397",
+    "ipc_title": "Robbery with attempt to cause death",
+    "ipc_description": "Punishes robbery or dacoity with attempt to cause death or grievous hurt.",
+    "bns_section": "311",
+    "bns_title": "Robbery with attempt to cause death",
+    "bns_description": "Punishes robbery with attempt to cause death under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_399": {
+    "ipc_section": "399",
+    "ipc_title": "Preparing for dacoity",
+    "ipc_description": "Punishes preparation to commit dacoity.",
+    "bns_section": "312",
+    "bns_title": "Preparing for dacoity",
+    "bns_description": "Punishes preparation to commit dacoity under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_411": {
+    "ipc_section": "411",
+    "ipc_title": "Receiving stolen property",
+    "ipc_description": "Punishes dishonestly receiving stolen property.",
+    "bns_section": "317",
+    "bns_title": "Receiving stolen property",
+    "bns_description": "Punishes receiving stolen property under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_413": {
+    "ipc_section": "413",
+    "ipc_title": "Habitually dealing in stolen property",
+    "ipc_description": "Punishes habitual dealing in stolen property.",
+    "bns_section": "319",
+    "bns_title": "Habitually dealing in stolen property",
+    "bns_description": "Punishes habitual dealing in stolen property under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_415": {
+    "ipc_section": "415",
+    "ipc_title": "Cheating definition",
+    "ipc_description": "Defines cheating and its elements.",
+    "bns_section": "316",
+    "bns_title": "Cheating",
+    "bns_description": "Defines cheating under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_441": {
+    "ipc_section": "441",
+    "ipc_title": "Criminal trespass",
+    "ipc_description": "Defines criminal trespass.",
+    "bns_section": "329",
+    "bns_title": "Criminal trespass",
+    "bns_description": "Defines criminal trespass under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_447": {
+    "ipc_section": "447",
+    "ipc_title": "Punishment for criminal trespass",
+    "ipc_description": "Punishes criminal trespass.",
+    "bns_section": "333",
+    "bns_title": "Punishment for criminal trespass",
+    "bns_description": "Punishes criminal trespass under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_448": {
+    "ipc_section": "448",
+    "ipc_title": "House trespass",
+    "ipc_description": "Punishes house trespass.",
+    "bns_section": "330",
+    "bns_title": "House trespass",
+    "bns_description": "Punishes house trespass under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_463": {
+    "ipc_section": "463",
+    "ipc_title": "Forgery",
+    "ipc_description": "Defines forgery.",
+    "bns_section": "336",
+    "bns_title": "Forgery",
+    "bns_description": "Defines forgery under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_465": {
+    "ipc_section": "465",
+    "ipc_title": "Punishment for forgery",
+    "ipc_description": "Punishes forgery.",
+    "bns_section": "337",
+    "bns_title": "Punishment for forgery",
+    "bns_description": "Punishes forgery under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_468": {
+    "ipc_section": "468",
+    "ipc_title": "Forgery for purpose of cheating",
+    "ipc_description": "Punishes forgery intended for cheating.",
+    "bns_section": "339",
+    "bns_title": "Forgery for purpose of cheating",
+    "bns_description": "Punishes forgery for cheating under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_471": {
+    "ipc_section": "471",
+    "ipc_title": "Using forged document",
+    "ipc_description": "Punishes using a forged document as genuine.",
+    "bns_section": "341",
+    "bns_title": "Using forged document",
+    "bns_description": "Punishes using a forged document under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_489A": {
+    "ipc_section": "489A",
+    "ipc_title": "Counterfeiting currency",
+    "ipc_description": "Punishes counterfeiting of currency or bank notes.",
+    "bns_section": "357",
+    "bns_title": "Counterfeiting currency",
+    "bns_description": "Punishes counterfeiting currency under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_500": {
+    "ipc_section": "500",
+    "ipc_title": "Defamation",
+    "ipc_description": "Punishes defamation.",
+    "bns_section": "356",
+    "bns_title": "Defamation",
+    "bns_description": "Punishes defamation under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_503": {
+    "ipc_section": "503",
+    "ipc_title": "Criminal intimidation",
+    "ipc_description": "Defines criminal intimidation.",
+    "bns_section": "351",
+    "bns_title": "Criminal intimidation",
+    "bns_description": "Defines criminal intimidation under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_506": {
+    "ipc_section": "506",
+    "ipc_title": "Punishment for criminal intimidation",
+    "ipc_description": "Punishes criminal intimidation.",
+    "bns_section": "352",
+    "bns_title": "Punishment for criminal intimidation",
+    "bns_description": "Punishes criminal intimidation under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_509": {
+    "ipc_section": "509",
+    "ipc_title": "Word or gesture insulting modesty of a woman",
+    "ipc_description": "Punishes words or gestures intended to insult a woman's modesty.",
+    "bns_section": "79",
+    "bns_title": "Word or gesture insulting woman's modesty",
+    "bns_description": "Punishes words or gestures intended to insult a woman's modesty under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_201": {
+    "ipc_section": "201",
+    "ipc_title": "Causing disappearance of evidence",
+    "ipc_description": "Punishes destruction or concealment of evidence.",
+    "bns_section": "238",
+    "bns_title": "Causing disappearance of evidence",
+    "bns_description": "Punishes destruction or concealment of evidence under the BNS.",
+    "status": "replaced"
+  },
+  "IPC_279": {
+    "ipc_section": "279",
+    "ipc_title": "Rash driving",
+    "ipc_description": "Punishes rash or negligent driving on a public way.",
+    "bns_section": "281",
+    "bns_title": "Rash driving",
+    "bns_description": "Punishes rash or negligent driving under the BNS.",
+    "status": "replaced"
+  }
+}

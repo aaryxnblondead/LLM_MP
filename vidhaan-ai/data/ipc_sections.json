@@ -1,0 +1,289 @@
+[
+  {
+    "section_number": "302",
+    "title": "Murder",
+    "description": "Punishes the offense of murder.",
+    "punishment": "Death or life imprisonment and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "304",
+    "title": "Culpable homicide not amounting to murder",
+    "description": "Punishes culpable homicide not amounting to murder.",
+    "punishment": "Up to life imprisonment or up to 10 years and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "307",
+    "title": "Attempt to murder",
+    "description": "Punishes attempt to commit murder.",
+    "punishment": "Up to 10 years or life imprisonment and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "376",
+    "title": "Rape",
+    "description": "Defines and punishes the offense of rape.",
+    "punishment": "Minimum 7 years, may extend to life imprisonment",
+    "category": "women"
+  },
+  {
+    "section_number": "420",
+    "title": "Cheating and dishonestly inducing delivery of property",
+    "description": "Punishes cheating involving dishonest inducement.",
+    "punishment": "Up to 7 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "498A",
+    "title": "Cruelty by husband or relatives",
+    "description": "Punishes cruelty against a married woman.",
+    "punishment": "Up to 3 years and fine",
+    "category": "women"
+  },
+  {
+    "section_number": "354",
+    "title": "Assault on woman with intent to outrage modesty",
+    "description": "Punishes assault or criminal force against a woman with intent to outrage modesty.",
+    "punishment": "Up to 5 years and fine",
+    "category": "women"
+  },
+  {
+    "section_number": "406",
+    "title": "Criminal breach of trust",
+    "description": "Punishes criminal breach of trust.",
+    "punishment": "Up to 3 years or fine or both",
+    "category": "property"
+  },
+  {
+    "section_number": "120B",
+    "title": "Criminal conspiracy",
+    "description": "Punishes criminal conspiracy.",
+    "punishment": "Depends on conspiracy offense",
+    "category": "criminal"
+  },
+  {
+    "section_number": "34",
+    "title": "Common intention",
+    "description": "Joint liability for acts done in furtherance of common intention.",
+    "punishment": "Same as main offense",
+    "category": "criminal"
+  },
+  {
+    "section_number": "147",
+    "title": "Rioting",
+    "description": "Punishes rioting.",
+    "punishment": "Up to 2 years or fine or both",
+    "category": "public_order"
+  },
+  {
+    "section_number": "148",
+    "title": "Rioting with deadly weapon",
+    "description": "Punishes rioting while armed with a deadly weapon.",
+    "punishment": "Up to 3 years or fine or both",
+    "category": "public_order"
+  },
+  {
+    "section_number": "149",
+    "title": "Unlawful assembly",
+    "description": "Liability for offenses committed by members of an unlawful assembly.",
+    "punishment": "Same as main offense",
+    "category": "public_order"
+  },
+  {
+    "section_number": "186",
+    "title": "Obstructing public servant",
+    "description": "Punishes obstruction of a public servant in discharge of duties.",
+    "punishment": "Up to 3 months or fine or both",
+    "category": "public_order"
+  },
+  {
+    "section_number": "294",
+    "title": "Obscene acts",
+    "description": "Punishes obscene acts or songs in public.",
+    "punishment": "Up to 3 months or fine or both",
+    "category": "public_order"
+  },
+  {
+    "section_number": "323",
+    "title": "Voluntarily causing hurt",
+    "description": "Punishes voluntarily causing hurt.",
+    "punishment": "Up to 1 year or fine or both",
+    "category": "criminal"
+  },
+  {
+    "section_number": "324",
+    "title": "Hurt by dangerous weapons",
+    "description": "Punishes voluntarily causing hurt by dangerous weapons.",
+    "punishment": "Up to 3 years or fine or both",
+    "category": "criminal"
+  },
+  {
+    "section_number": "325",
+    "title": "Grievous hurt",
+    "description": "Punishes voluntarily causing grievous hurt.",
+    "punishment": "Up to 7 years and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "379",
+    "title": "Theft",
+    "description": "Punishes theft.",
+    "punishment": "Up to 3 years or fine or both",
+    "category": "property"
+  },
+  {
+    "section_number": "380",
+    "title": "Theft in dwelling house",
+    "description": "Punishes theft in a dwelling house.",
+    "punishment": "Up to 7 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "392",
+    "title": "Robbery",
+    "description": "Punishes robbery.",
+    "punishment": "Up to 10 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "395",
+    "title": "Dacoity",
+    "description": "Punishes dacoity.",
+    "punishment": "Life imprisonment or up to 10 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "397",
+    "title": "Robbery with attempt to cause death",
+    "description": "Punishes robbery with attempt to cause death or grievous hurt.",
+    "punishment": "Minimum 7 years",
+    "category": "property"
+  },
+  {
+    "section_number": "399",
+    "title": "Preparing for dacoity",
+    "description": "Punishes preparation for dacoity.",
+    "punishment": "Up to 10 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "411",
+    "title": "Receiving stolen property",
+    "description": "Punishes dishonestly receiving stolen property.",
+    "punishment": "Up to 3 years or fine or both",
+    "category": "property"
+  },
+  {
+    "section_number": "413",
+    "title": "Habitually dealing in stolen property",
+    "description": "Punishes habitual dealing in stolen property.",
+    "punishment": "Life imprisonment or up to 10 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "415",
+    "title": "Cheating definition",
+    "description": "Defines cheating and its elements.",
+    "punishment": "Definition only",
+    "category": "property"
+  },
+  {
+    "section_number": "441",
+    "title": "Criminal trespass",
+    "description": "Defines criminal trespass.",
+    "punishment": "Definition only",
+    "category": "property"
+  },
+  {
+    "section_number": "447",
+    "title": "Punishment for criminal trespass",
+    "description": "Punishes criminal trespass.",
+    "punishment": "Up to 3 months or fine or both",
+    "category": "property"
+  },
+  {
+    "section_number": "448",
+    "title": "House trespass",
+    "description": "Punishes house trespass.",
+    "punishment": "Up to 1 year or fine or both",
+    "category": "property"
+  },
+  {
+    "section_number": "463",
+    "title": "Forgery",
+    "description": "Defines forgery.",
+    "punishment": "Definition only",
+    "category": "criminal"
+  },
+  {
+    "section_number": "465",
+    "title": "Punishment for forgery",
+    "description": "Punishes forgery.",
+    "punishment": "Up to 2 years or fine or both",
+    "category": "criminal"
+  },
+  {
+    "section_number": "468",
+    "title": "Forgery for purpose of cheating",
+    "description": "Punishes forgery intended for cheating.",
+    "punishment": "Up to 7 years and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "471",
+    "title": "Using forged document",
+    "description": "Punishes using a forged document as genuine.",
+    "punishment": "Same as forgery offense",
+    "category": "criminal"
+  },
+  {
+    "section_number": "489A",
+    "title": "Counterfeiting currency",
+    "description": "Punishes counterfeiting of currency or bank notes.",
+    "punishment": "Life imprisonment or up to 10 years and fine",
+    "category": "financial"
+  },
+  {
+    "section_number": "500",
+    "title": "Defamation",
+    "description": "Punishes defamation.",
+    "punishment": "Up to 2 years or fine or both",
+    "category": "civil"
+  },
+  {
+    "section_number": "503",
+    "title": "Criminal intimidation",
+    "description": "Defines criminal intimidation.",
+    "punishment": "Definition only",
+    "category": "criminal"
+  },
+  {
+    "section_number": "506",
+    "title": "Punishment for criminal intimidation",
+    "description": "Punishes criminal intimidation.",
+    "punishment": "Up to 2 years or fine or both",
+    "category": "criminal"
+  },
+  {
+    "section_number": "509",
+    "title": "Word or gesture insulting modesty of a woman",
+    "description": "Punishes words or gestures intended to insult a woman's modesty.",
+    "punishment": "Up to 1 year or fine or both",
+    "category": "women"
+  },
+  {
+    "section_number": "201",
+    "title": "Causing disappearance of evidence",
+    "description": "Punishes destruction or concealment of evidence.",
+    "punishment": "Up to 7 years and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "279",
+    "title": "Rash driving",
+    "description": "Punishes rash or negligent driving on a public way.",
+    "punishment": "Up to 6 months or fine or both",
+    "category": "traffic"
+  }
+]

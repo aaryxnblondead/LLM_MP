@@ -1,0 +1,275 @@
+[
+  {
+    "section_number": "103",
+    "title": "Murder",
+    "description": "Punishes the offense of murder under the BNS.",
+    "punishment": "Death or life imprisonment and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "105",
+    "title": "Culpable homicide",
+    "description": "Punishes culpable homicide.",
+    "punishment": "Up to life imprisonment or up to 10 years and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "109",
+    "title": "Attempt to murder",
+    "description": "Punishes attempts to commit murder under the BNS.",
+    "punishment": "Up to 10 years or life imprisonment and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "63",
+    "title": "Rape",
+    "description": "Defines and punishes rape under the BNS.",
+    "punishment": "Minimum 7 years, may extend to life imprisonment",
+    "category": "women"
+  },
+  {
+    "section_number": "316",
+    "title": "Cheating",
+    "description": "Defines and punishes cheating under the BNS.",
+    "punishment": "Up to 7 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "85",
+    "title": "Cruelty by husband or relatives",
+    "description": "Punishes cruelty against a married woman under the BNS.",
+    "punishment": "Up to 3 years and fine",
+    "category": "women"
+  },
+  {
+    "section_number": "74",
+    "title": "Assault on woman",
+    "description": "Punishes assault on a woman under the BNS.",
+    "punishment": "Up to 5 years and fine",
+    "category": "women"
+  },
+  {
+    "section_number": "61",
+    "title": "Criminal conspiracy",
+    "description": "Punishes criminal conspiracy under the BNS.",
+    "punishment": "Depends on conspiracy offense",
+    "category": "criminal"
+  },
+  {
+    "section_number": "3(5)",
+    "title": "Common intention",
+    "description": "Joint liability for acts done in furtherance of common intention.",
+    "punishment": "Same as main offense",
+    "category": "criminal"
+  },
+  {
+    "section_number": "191",
+    "title": "Rioting",
+    "description": "Punishes rioting under the BNS.",
+    "punishment": "Up to 2 years or fine or both",
+    "category": "public_order"
+  },
+  {
+    "section_number": "192",
+    "title": "Rioting with deadly weapon",
+    "description": "Punishes rioting with deadly weapon under the BNS.",
+    "punishment": "Up to 3 years or fine or both",
+    "category": "public_order"
+  },
+  {
+    "section_number": "190",
+    "title": "Unlawful assembly",
+    "description": "Liability for offenses committed by members of an unlawful assembly.",
+    "punishment": "Same as main offense",
+    "category": "public_order"
+  },
+  {
+    "section_number": "221",
+    "title": "Obstructing public servant",
+    "description": "Punishes obstruction of a public servant under the BNS.",
+    "punishment": "Up to 3 months or fine or both",
+    "category": "public_order"
+  },
+  {
+    "section_number": "296",
+    "title": "Obscene acts",
+    "description": "Punishes obscene acts and songs in public places under the BNS.",
+    "punishment": "Up to 3 months or fine or both",
+    "category": "public_order"
+  },
+  {
+    "section_number": "115",
+    "title": "Voluntarily causing hurt",
+    "description": "Punishes voluntarily causing hurt under the BNS.",
+    "punishment": "Up to 1 year or fine or both",
+    "category": "criminal"
+  },
+  {
+    "section_number": "117",
+    "title": "Hurt by dangerous weapons",
+    "description": "Punishes hurt by dangerous weapons under the BNS.",
+    "punishment": "Up to 3 years or fine or both",
+    "category": "criminal"
+  },
+  {
+    "section_number": "116",
+    "title": "Grievous hurt",
+    "description": "Punishes grievous hurt under the BNS.",
+    "punishment": "Up to 7 years and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "303",
+    "title": "Theft",
+    "description": "Punishes theft under the BNS.",
+    "punishment": "Up to 3 years or fine or both",
+    "category": "property"
+  },
+  {
+    "section_number": "305",
+    "title": "Theft in dwelling",
+    "description": "Punishes theft in a dwelling house under the BNS.",
+    "punishment": "Up to 7 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "309",
+    "title": "Robbery",
+    "description": "Punishes robbery under the BNS.",
+    "punishment": "Up to 10 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "310",
+    "title": "Dacoity",
+    "description": "Punishes dacoity under the BNS.",
+    "punishment": "Life imprisonment or up to 10 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "311",
+    "title": "Robbery with attempt to cause death",
+    "description": "Punishes robbery with attempt to cause death under the BNS.",
+    "punishment": "Minimum 7 years",
+    "category": "property"
+  },
+  {
+    "section_number": "312",
+    "title": "Preparing for dacoity",
+    "description": "Punishes preparation for dacoity under the BNS.",
+    "punishment": "Up to 10 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "317",
+    "title": "Receiving stolen property",
+    "description": "Punishes receiving stolen property under the BNS.",
+    "punishment": "Up to 3 years or fine or both",
+    "category": "property"
+  },
+  {
+    "section_number": "319",
+    "title": "Habitually dealing in stolen property",
+    "description": "Punishes habitual dealing in stolen property under the BNS.",
+    "punishment": "Life imprisonment or up to 10 years and fine",
+    "category": "property"
+  },
+  {
+    "section_number": "329",
+    "title": "Criminal trespass",
+    "description": "Defines criminal trespass under the BNS.",
+    "punishment": "Definition only",
+    "category": "property"
+  },
+  {
+    "section_number": "333",
+    "title": "Punishment for criminal trespass",
+    "description": "Punishes criminal trespass under the BNS.",
+    "punishment": "Up to 3 months or fine or both",
+    "category": "property"
+  },
+  {
+    "section_number": "330",
+    "title": "House trespass",
+    "description": "Punishes house trespass under the BNS.",
+    "punishment": "Up to 1 year or fine or both",
+    "category": "property"
+  },
+  {
+    "section_number": "336",
+    "title": "Forgery",
+    "description": "Defines forgery under the BNS.",
+    "punishment": "Definition only",
+    "category": "criminal"
+  },
+  {
+    "section_number": "337",
+    "title": "Punishment for forgery",
+    "description": "Punishes forgery under the BNS.",
+    "punishment": "Up to 2 years or fine or both",
+    "category": "criminal"
+  },
+  {
+    "section_number": "339",
+    "title": "Forgery for purpose of cheating",
+    "description": "Punishes forgery intended for cheating under the BNS.",
+    "punishment": "Up to 7 years and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "341",
+    "title": "Using forged document",
+    "description": "Punishes using forged document under the BNS.",
+    "punishment": "Same as forgery offense",
+    "category": "criminal"
+  },
+  {
+    "section_number": "357",
+    "title": "Counterfeiting currency",
+    "description": "Punishes counterfeiting of currency under the BNS.",
+    "punishment": "Life imprisonment or up to 10 years and fine",
+    "category": "financial"
+  },
+  {
+    "section_number": "356",
+    "title": "Defamation",
+    "description": "Punishes defamation under the BNS.",
+    "punishment": "Up to 2 years or fine or both",
+    "category": "civil"
+  },
+  {
+    "section_number": "351",
+    "title": "Criminal intimidation",
+    "description": "Defines criminal intimidation under the BNS.",
+    "punishment": "Definition only",
+    "category": "criminal"
+  },
+  {
+    "section_number": "352",
+    "title": "Punishment for criminal intimidation",
+    "description": "Punishes criminal intimidation under the BNS.",
+    "punishment": "Up to 2 years or fine or both",
+    "category": "criminal"
+  },
+  {
+    "section_number": "79",
+    "title": "Word or gesture insulting woman's modesty",
+    "description": "Punishes words or gestures intended to insult a woman's modesty under the BNS.",
+    "punishment": "Up to 1 year or fine or both",
+    "category": "women"
+  },
+  {
+    "section_number": "238",
+    "title": "Causing disappearance of evidence",
+    "description": "Punishes destruction or concealment of evidence under the BNS.",
+    "punishment": "Up to 7 years and fine",
+    "category": "criminal"
+  },
+  {
+    "section_number": "281",
+    "title": "Rash driving",
+    "description": "Punishes rash or negligent driving under the BNS.",
+    "punishment": "Up to 6 months or fine or both",
+    "category": "traffic"
+  }
+]
