@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import csv
 import json
 from pathlib import Path
 from typing import Any, cast
@@ -16,12 +17,42 @@ from core.rag_engine import RAGEngine
 from scripts.build_vector_store import main as build_vector_store
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
+BNS_CSV_PATH = Path(__file__).resolve().parent.parent / "bns_sections.csv"
 
 
 def load_json(file_name: str) -> Any:
     """Load a JSON file from the data directory."""
     file_path = DATA_DIR / file_name
     return json.loads(file_path.read_text(encoding="utf-8"))
+
+
+def load_bns_csv() -> list[dict]:
+    """Load BNS sections from the CSV dataset if available."""
+    if not BNS_CSV_PATH.exists():
+        return []
+
+    sections: list[dict] = []
+    with BNS_CSV_PATH.open("r", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            section_number = (row.get("Section") or "").strip()
+            section_name = (row.get("Section _name") or row.get("Section_name") or "").strip()
+            description = (row.get("Description") or "").strip()
+            category = (row.get("Chapter_name") or "").strip().lower() or "general"
+
+            if not section_number or not description:
+                continue
+
+            sections.append(
+                {
+                    "section_number": section_number,
+                    "title": section_name or f"Section {section_number}",
+                    "description": description,
+                    "punishment": "Not specified in dataset",
+                    "category": category,
+                }
+            )
+    return sections
 
 
 @st.cache_resource
@@ -34,7 +65,9 @@ def get_rag_engine() -> RAGEngine:
 def get_section_data() -> tuple[list[dict], list[dict], dict]:
     """Load IPC, BNS, and mapping data."""
     ipc_sections = cast(list[dict], load_json("ipc_sections.json"))
-    bns_sections = cast(list[dict], load_json("bns_sections.json"))
+    bns_sections = load_bns_csv()
+    if not bns_sections:
+        bns_sections = cast(list[dict], load_json("bns_sections.json"))
     mapping = cast(dict, load_json("ipc_bns_mapping.json"))
     return ipc_sections, bns_sections, mapping
 
@@ -133,7 +166,11 @@ def main() -> None:
 
     with tab1:
         st.subheader("Analyze a document")
-        file = st.file_uploader("Upload a PDF or TXT", type=["pdf", "txt"], key="analysis_file")
+        file = st.file_uploader(
+            "Upload a PDF, TXT, or image",
+            type=["pdf", "txt", "png", "jpg", "jpeg"],
+            key="analysis_file",
+        )
         raw_text = st.text_area("Or paste raw text", height=200, key="analysis_text")
         analyze_clicked = st.button("Analyze Document")
 
@@ -223,7 +260,11 @@ def main() -> None:
 
     with tab3:
         st.subheader("Baseline vs RAG comparison")
-        file_cmp = st.file_uploader("Upload a PDF or TXT", type=["pdf", "txt"], key="cmp_file")
+        file_cmp = st.file_uploader(
+            "Upload a PDF, TXT, or image",
+            type=["pdf", "txt", "png", "jpg", "jpeg"],
+            key="cmp_file",
+        )
         raw_cmp_text = st.text_area("Or paste raw text", height=200, key="cmp_text")
         compare_clicked = st.button("Run Comparison")
 

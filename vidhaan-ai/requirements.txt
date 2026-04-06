@@ -5,5 +5,7 @@ langchain-google-genai
 google-generativeai
 chromadb
 pdfplumber
+pytesseract
+pillow
 langdetect
 python-dotenv

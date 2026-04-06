@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import csv
 import json
 import sys
 from pathlib import Path
@@ -15,12 +16,45 @@ if str(PROJECT_ROOT) not in sys.path:
 from core.rag_engine import RAGEngine
 
 DATA_DIR = PROJECT_ROOT / "data"
+BNS_CSV_PATH = PROJECT_ROOT.parent / "bns_sections.csv"
 
 
 def load_sections(file_path: Path, law_type: str) -> list[dict]:
     """Load section data from JSON and attach law_type."""
     raw = json.loads(file_path.read_text(encoding="utf-8"))
     return [{**entry, "law_type": law_type} for entry in raw]
+
+
+def load_bns_sections_from_csv(file_path: Path) -> list[dict]:
+    """Load BNS sections from the provided CSV dataset."""
+    if not file_path.exists():
+        raise FileNotFoundError(
+            f"BNS CSV dataset not found at {file_path}. Please place bns_sections.csv in the repo root."
+        )
+
+    sections: list[dict] = []
+    with file_path.open("r", encoding="utf-8") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            section_number = (row.get("Section") or "").strip()
+            section_name = (row.get("Section _name") or row.get("Section_name") or "").strip()
+            description = (row.get("Description") or "").strip()
+            category = (row.get("Chapter_name") or "").strip().lower() or "general"
+
+            if not section_number or not description:
+                continue
+
+            sections.append(
+                {
+                    "section_number": section_number,
+                    "title": section_name or f"Section {section_number}",
+                    "description": description,
+                    "punishment": "Not specified in dataset",
+                    "category": category,
+                    "law_type": "BNS",
+                }
+            )
+    return sections
 
 
 def build_documents(sections: list[dict]) -> list[dict]:
@@ -61,7 +95,10 @@ def main() -> None:
     bns_file = DATA_DIR / "bns_sections.json"
 
     ipc_sections = load_sections(ipc_file, "IPC")
-    bns_sections = load_sections(bns_file, "BNS")
+    if BNS_CSV_PATH.exists():
+        bns_sections = load_bns_sections_from_csv(BNS_CSV_PATH)
+    else:
+        bns_sections = load_sections(bns_file, "BNS")
 
     documents = build_documents(ipc_sections + bns_sections)
     rag.build_index(documents)

@@ -7,6 +7,8 @@ from io import BytesIO
 from typing import Dict, List
 
 import pdfplumber
+import pytesseract
+from PIL import Image
 
 
 IPC_PATTERN = re.compile(
@@ -19,8 +21,16 @@ BNS_PATTERN = re.compile(
 )
 
 
+def _ocr_image(image: Image.Image) -> str:
+    """Run OCR on a PIL image and return extracted text."""
+    try:
+        return pytesseract.image_to_string(image)
+    except Exception:
+        return ""
+
+
 def extract_text(file) -> str:
-    """Extract raw text from an uploaded PDF or TXT file.
+    """Extract raw text from an uploaded PDF, TXT, or image file.
 
     Args:
         file: Streamlit uploaded file object.
@@ -35,7 +45,20 @@ def extract_text(file) -> str:
     if file_name.endswith(".pdf"):
         with pdfplumber.open(BytesIO(file.getvalue())) as pdf:
             pages = [page.extract_text() or "" for page in pdf.pages]
-        return "\n".join(pages).strip()
+            extracted = "\n".join(pages).strip()
+
+            if extracted:
+                return extracted
+
+            ocr_pages = []
+            for page in pdf.pages:
+                page_image = page.to_image(resolution=300).original
+                ocr_pages.append(_ocr_image(page_image))
+            return "\n".join(ocr_pages).strip()
+
+    if file_name.endswith((".png", ".jpg", ".jpeg")):
+        image = Image.open(BytesIO(file.getvalue()))
+        return _ocr_image(image).strip()
 
     raw_bytes = file.getvalue()
     try:

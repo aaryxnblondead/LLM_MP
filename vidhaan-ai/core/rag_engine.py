@@ -20,7 +20,7 @@ class RAGEngine:
         if api_key:
             os.environ.setdefault("GOOGLE_API_KEY", api_key)
         self.persist_directory = persist_directory
-        self.embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004")
+        self.embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
         self.ipc_store = Chroma(
             collection_name="ipc_corpus",
             persist_directory=self.persist_directory,
