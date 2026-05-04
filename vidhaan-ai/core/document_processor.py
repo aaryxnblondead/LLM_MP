@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import re
 from io import BytesIO
 from typing import Dict, List
@@ -21,12 +22,28 @@ BNS_PATTERN = re.compile(
 )
 
 
+def _configure_tesseract() -> None:
+    """Configure the Tesseract binary path from environment if provided."""
+    cmd = os.getenv("TESSERACT_CMD")
+    if cmd:
+        pytesseract.pytesseract.tesseract_cmd = cmd
+
+
+def _ensure_tesseract_available() -> None:
+    """Ensure Tesseract OCR is installed and available."""
+    _configure_tesseract()
+    try:
+        _ = pytesseract.get_tesseract_version()
+    except Exception as exc:
+        raise RuntimeError(
+            "Tesseract OCR is not available. Install it and/or set TESSERACT_CMD."
+        ) from exc
+
+
 def _ocr_image(image: Image.Image) -> str:
     """Run OCR on a PIL image and return extracted text."""
-    try:
-        return pytesseract.image_to_string(image)
-    except Exception:
-        return ""
+    _ensure_tesseract_available()
+    return pytesseract.image_to_string(image)
 
 
 def extract_text(file) -> str:

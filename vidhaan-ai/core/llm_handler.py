@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import os
 from pathlib import Path
-from typing import Any, Callable, Dict, List
+from typing import Dict, List
 
 from dotenv import load_dotenv
 import google.generativeai as genai
@@ -61,14 +61,15 @@ def simplify_document(
             "You have been provided with relevant sections from the Indian Penal Code (IPC) "
             "and the Bharatiya Nyaya Sanhita (BNS), which replaced the IPC on July 1, 2024.\n\n"
             "Your tasks:\n"
-            f"1. Explain the document in plain {target_language} that any layperson can understand\n"
+            "1. Explain the document in plain language that any layperson can understand\n"
             "2. Identify every legal section cited and explain what it means\n"
             "3. For every IPC section found, show its BNS equivalent (or state if no direct equivalent exists)\n"
             "4. For every BNS section found, show the original IPC section it replaced\n"
             "5. Highlight the key rights, obligations, or risks for the person reading this document\n"
             "6. Use the retrieved legal context provided to ensure accuracy. Do not hallucinate section numbers.\n"
             "7. Always end with: \"⚠️ This is a simplified explanation for informational purposes only. "
-            "Please consult a qualified lawyer for legal advice.\"\n\n"
+            "Please consult a qualified lawyer for legal advice.\"\n"
+            f"8. {language_instruction}\n\n"
             "Retrieved Legal Context:\n"
             f"{retrieved_context}\n"
         )

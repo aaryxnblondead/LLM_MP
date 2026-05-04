@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 
-import os
 from typing import Dict, List
 
+import os
 from langchain_chroma import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from dotenv import load_dotenv
@@ -20,7 +20,8 @@ class RAGEngine:
         if api_key:
             os.environ.setdefault("GOOGLE_API_KEY", api_key)
         self.persist_directory = persist_directory
-        self.embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
+        embedding_model = os.getenv("GEMINI_EMBEDDING_MODEL", "models/embedding-001")
+        self.embeddings = GoogleGenerativeAIEmbeddings(model=embedding_model)
         self.ipc_store = Chroma(
             collection_name="ipc_corpus",
             persist_directory=self.persist_directory,

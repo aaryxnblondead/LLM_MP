@@ -133,7 +133,12 @@ def main() -> None:
     st.sidebar.title("VidhaanAI")
     st.sidebar.caption("Indian Legal Documents, Simplified.")
 
-    selected_language = st.sidebar.radio("Language", SUPPORTED_LANGUAGES, index=0)
+    selected_language = st.sidebar.selectbox(
+        "Language",
+        SUPPORTED_LANGUAGES,
+        index=0,
+        help="Supports all 22 official Indian languages plus English.",
+    )
     mode = st.sidebar.radio(
         "Compare Modes",
         ["Standard (RAG)", "Baseline (No RAG)"],
@@ -175,31 +180,44 @@ def main() -> None:
         analyze_clicked = st.button("Analyze Document")
 
         if analyze_clicked:
-            text = extract_text(file) if file else raw_text.strip()
-            if not text:
+            if not file and not raw_text.strip():
                 st.warning("Please upload a file or paste text to analyze.")
             else:
-                doc_type = classify_document_type(text)
-                detected = detect_sections(text)
-                context = ""
-                if mode == "Standard (RAG)" and rag.is_index_built():
-                    context = get_retrieved_context(rag, text[:2000])
-
-                with st.spinner("Generating explanation..."):
-                    result = simplify_document(
-                        text,
-                        doc_type,
-                        detected,
-                        context,
-                        selected_language,
-                        baseline_mode=(mode == "Baseline (No RAG)"),
+                try:
+                    text = extract_text(file) if file else raw_text.strip()
+                except RuntimeError as exc:
+                    st.error(
+                        "OCR failed. Install Tesseract OCR and set TESSERACT_CMD if needed. "
+                        f"Details: {exc}"
                     )
-                st.session_state["analysis_result"] = {
-                    "doc_type": doc_type,
-                    "detected": detected,
-                    "cross_refs": result["cross_references"],
-                    "explanation": result["explanation"],
-                }
+                    text = ""
+                if not text:
+                    st.warning(
+                        "We could not extract any text from the uploaded file. "
+                        "If this is a scanned PDF, OCR may be required."
+                    )
+                else:
+                    doc_type = classify_document_type(text)
+                    detected = detect_sections(text)
+                    context = ""
+                    if mode == "Standard (RAG)" and rag.is_index_built():
+                        context = get_retrieved_context(rag, text[:2000])
+
+                    with st.spinner("Generating explanation..."):
+                        result = simplify_document(
+                            text,
+                            doc_type,
+                            detected,
+                            context,
+                            selected_language,
+                            baseline_mode=(mode == "Baseline (No RAG)"),
+                        )
+                    st.session_state["analysis_result"] = {
+                        "doc_type": doc_type,
+                        "detected": detected,
+                        "cross_refs": result["cross_references"],
+                        "explanation": result["explanation"],
+                    }
 
         if "analysis_result" in st.session_state:
             result = st.session_state["analysis_result"]
@@ -269,39 +287,52 @@ def main() -> None:
         compare_clicked = st.button("Run Comparison")
 
         if compare_clicked:
-            text = extract_text(file_cmp) if file_cmp else raw_cmp_text.strip()
-            if not text:
+            if not file_cmp and not raw_cmp_text.strip():
                 st.warning("Please upload a file or paste text for comparison.")
             else:
-                doc_type = classify_document_type(text)
-                detected = detect_sections(text)
-                context = ""
-                if rag.is_index_built():
-                    context = get_retrieved_context(rag, text[:2000])
-
-                with st.spinner("Generating comparison outputs..."):
-                    standard = simplify_document(
-                        text,
-                        doc_type,
-                        detected,
-                        context,
-                        selected_language,
-                        baseline_mode=False,
+                try:
+                    text = extract_text(file_cmp) if file_cmp else raw_cmp_text.strip()
+                except RuntimeError as exc:
+                    st.error(
+                        "OCR failed. Install Tesseract OCR and set TESSERACT_CMD if needed. "
+                        f"Details: {exc}"
                     )
-                    baseline = simplify_document(
-                        text,
-                        doc_type,
-                        detected,
-                        "",
-                        selected_language,
-                        baseline_mode=True,
+                    text = ""
+                if not text:
+                    st.warning(
+                        "We could not extract any text from the uploaded file. "
+                        "If this is a scanned PDF, OCR may be required."
                     )
+                else:
+                    doc_type = classify_document_type(text)
+                    detected = detect_sections(text)
+                    context = ""
+                    if rag.is_index_built():
+                        context = get_retrieved_context(rag, text[:2000])
 
-                st.session_state["comparison_result"] = {
-                    "standard": standard,
-                    "baseline": baseline,
-                    "detected": detected,
-                }
+                    with st.spinner("Generating comparison outputs..."):
+                        standard = simplify_document(
+                            text,
+                            doc_type,
+                            detected,
+                            context,
+                            selected_language,
+                            baseline_mode=False,
+                        )
+                        baseline = simplify_document(
+                            text,
+                            doc_type,
+                            detected,
+                            "",
+                            selected_language,
+                            baseline_mode=True,
+                        )
+
+                    st.session_state["comparison_result"] = {
+                        "standard": standard,
+                        "baseline": baseline,
+                        "detected": detected,
+                    }
 
         if "comparison_result" in st.session_state:
             result = st.session_state["comparison_result"]

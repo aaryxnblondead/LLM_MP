@@ -6,13 +6,17 @@ VidhaanAI is a multilingual Indian legal document simplifier with IPC-to-BNS cro
 - Streamlit-based UI for document analysis, section lookup, and baseline comparison
 - RAG pipeline using LangChain + ChromaDB with Gemini embeddings
 - IPC-to-BNS cross-referencing with curated section metadata
-- Multilingual output (English, Hindi, Marathi)
+- Multilingual output in all 22 official Indian languages, plus English
+
+## Supported Languages
+Assamese, Bengali, Bodo, Dogri, Gujarati, Hindi, Kannada, Kashmiri, Konkani, Maithili, Malayalam, Manipuri, Marathi, Nepali, Odia, Punjabi, Sanskrit, Santali, Sindhi, Tamil, Telugu, Urdu, and English.
 
 ## Setup
 1. Install dependencies:
    - `pip install -r requirements.txt`
 2. Create a `.env` file and add your API key:
    - `GEMINI_API_KEY=your_gemini_api_key_here`
+   - Optional: `GEMINI_EMBEDDING_MODEL=models/embedding-001`
 3. Build the vector store (one-time step):
    - `python scripts/build_vector_store.py`
 4. Run the Streamlit app:
