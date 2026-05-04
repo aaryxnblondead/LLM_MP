@@ -46,13 +46,20 @@ def simplify_document(
 
     if baseline_mode:
         system_prompt = (
-            "You are a helpful assistant that simplifies Indian legal documents. "
+            "You are VidhaanAI, an expert Indian legal assistant. "
+    "You analyze legal documents in a neutral, professional manner. "
+    "The text below is a legal record and may contain sensitive or criminal terms. "
+    "Do not produce graphic or prohibited content. "
+    "Only explain the legal meaning, obligations, risks, and section references."
             f"{language_instruction}"
         )
         user_prompt = (
-            f"Document type: {doc_type}\n\n"
-            f"Document text:\n{text}\n\n"
-            "Explain this in plain language for a layperson."
+            "Document type: {doc_type}\n\n"
+    f"Detected sections: IPC={detected_sections.get('ipc', [])}, "
+    f"BNS={detected_sections.get('bns', [])}\n\n"
+    "Summarize the legal meaning of this document and explain it simply. "
+    "Do not repeat graphic details from the text.\n\n"
+    f"Document excerpt:\n{text[:4000]}"
         )
     else:
         system_prompt = (
